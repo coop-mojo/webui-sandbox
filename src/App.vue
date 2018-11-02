@@ -68,7 +68,7 @@
       </v-tabs>
     </main>
     <v-footer app>
-      <img :src="logo" width="16" class="mr-1"></img>
+      <img :src="logo" width="16" class="mr-1">
       生協の知恵袋
       <v-spacer></v-spacer>
       <a href="http://docs.fukuro.coop.moe/" class="mr-1">
