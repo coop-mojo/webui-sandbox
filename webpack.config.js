@@ -12,7 +12,8 @@ const appName = '生協の知恵袋'
 module.exports = (env, argv) => {
   const is_production = argv.mode == 'production'
   const cdn_base = 'https://cdn.jsdelivr.net/npm/'
-  const vue_version = '2.5.17'
+  const vue_version = '2.5.21'
+  const vue_router_version = '3.0.2'
   const vuex_version = '3.0.1'
   const vuetify_version = '0.17.7'
 
@@ -76,24 +77,24 @@ module.exports = (env, argv) => {
         externals: [
           {
             module: 'vue',
-            entry: 'https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/'+(is_production ? 'vue.runtime.min.js' : 'vue.js'),
+            entry: cdn_base+'/vue@'+vue_version+'/dist/'+(is_production ? 'vue.runtime.min.js' : 'vue.js'),
             global: 'Vue'
           },
           {
             module: 'vue-router',
-            entry: 'https://cdn.jsdelivr.net/npm/vue-router@3.0.2/dist/vue-router.js',
+            entry: cdn_base+'/vue-router@'+vue_router_version+'/dist/vue-router.js',
             global: 'VueRouter'
           },
           {
             module: 'vuex',
-            entry: 'https://cdn.jsdelivr.net/npm/vuex@3.0.1/dist/vuex.js',
+            entry: cdn_base+'/vuex@'+vuex_version+'/dist/vuex.js',
             global: 'Vuex'
           },
           {
             module: 'vuetify',
             entry: [
-              'https://cdn.jsdelivr.net/npm/vuetify@0.17.7/dist/vuetify.js',
-              'https://cdn.jsdelivr.net/npm/vuetify@0.17.7/dist/vuetify.min.css',
+              cdn_base+'/vuetify@'+vuetify_version+'/dist/vuetify.js',
+              cdn_base+'/vuetify@'+vuetify_version+'/dist/vuetify.min.css',
             ],
             global: 'Vuetify'
           },
