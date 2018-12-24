@@ -76,12 +76,12 @@ module.exports = (env, argv) => {
         externals: [
           {
             module: 'vue',
-            entry: 'https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/'+(is_production ? 'vue.runtime.min.js' : 'vue.js'),
+            entry: 'https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/'+(is_production ? 'vue.runtime.min.js' : 'vue.js'),
             global: 'Vue'
           },
           {
             module: 'vue-router',
-            entry: 'https://cdn.jsdelivr.net/npm/vue-router@3.0.1/dist/vue-router.js',
+            entry: 'https://cdn.jsdelivr.net/npm/vue-router@3.0.2/dist/vue-router.js',
             global: 'VueRouter'
           },
           {
