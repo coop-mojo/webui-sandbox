@@ -7,15 +7,35 @@
 ご利用は[こちら](http://fukuro.coop.moe/)からどうぞ！
 ## ビルド方法
 
-``` bash
-# 依存関係のインストール
-yarn install
+### 依存関係のインストール
+
+```console
+$ yarn install
+```
 
 # ホットリロード込みのサーバー立ち上げ (localhost:8080)
-yarn run dev
+```console
+$ yarn run serve
+```
 
 # ビルド
-yarn run build
+```console
+$ yarn run build
+```
+
+### テストを実行
+```console
+$ yarn run test
+```
+
+### Lint を実行して修正
+```console
+$ yarn run lint
+```
+
+### ユニットテストを実行
+```console
+$ yarn run test:unit
 ```
 
 ## 開発に参加したい人向け
