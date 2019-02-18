@@ -1,24 +1,46 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-toolbar>
+  <v-app dark>
+    <v-system-bar status>
+        <v-img
+          :src="require('./assets/logo.svg')"
+          class="my-3"
+          contain
+          height="18"
+        ></v-img>
+        <span>生協の知恵袋 (冗長なので削除)</span>
+        <v-spacer></v-spacer>
+    </v-system-bar>
 
-    <v-content>
+    <v-content fluid>
       <HelloWorld/>
+    <v-bottom-nav absolute>
+     <v-btn
+        flat
+        value="recent"
+      >
+        <span>アイテム検索</span>
+     </v-btn>
+     <v-btn
+        flat
+        value="recent"
+      >
+        <span>バインダー</span>
+     </v-btn>
+     <v-btn
+        flat
+        value="recent"
+      >
+        <span>レシピ一括</span>
+     </v-btn>
+     <v-btn
+        flat
+        value="recent"
+      >
+        <span>設定</span>
+     </v-btn>
+    </v-bottom-nav>
     </v-content>
+
   </v-app>
 </template>
 
