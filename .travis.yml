@@ -15,6 +15,4 @@ script:
 
 after_success:
   - cd build
-  - echo $TRAVIS_BRANCH
-  - echo $GH_TOKEN
-  - '[ "$TRAVIS_BRANCH" == "sandbox" ] && [ $GH_TOKEN ] && ./deploy.sh'
+  - '[ "$TRAVIS_BRANCH" == "update" ] && [ $GH_TOKEN ] && ./deploy.sh'
