@@ -11,7 +11,6 @@ cache:
     - node_modules
 
 script:
-  - yarn run test
   - yarn run build
 
 after_success:
