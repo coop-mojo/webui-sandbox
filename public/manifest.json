@@ -2,7 +2,7 @@
   "lang": "ja",
   "name": "生協の知恵袋 (ウェブ版)",
   "short_name": "生協の知恵袋",
-  "start_url": "/webui-sandbox/",
+  "start_url": ".",
   "display": "fullscreen",
   "theme_color": "#2700b6",
   "background_color": "#2700b6",
